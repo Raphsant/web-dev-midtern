@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="content">
+    <nav>
+        <div id="navbar-top">
+            <div id="left-logo">
+                <svg viewBox="0 0 32 18" xmlns="http://www.w3.org/2000/svg" class="h-logo" width="48px" height="48px">
+                    <g fill="white" fill-rule="nonzero">
+                        <path d="M26.633 8.69l-3.424-3.431 1.711-3.43 5.563 5.575c.709.71.709 1.861 0 2.572l-6.847 6.86c-.709.711-1.858.711-2.567 0a1.821 1.821 0 010-2.571l5.564-5.575z"
+                              fill-opacity="0.64"></path>
+                        <path d="M21.07.536a1.813 1.813 0 012.568 0l1.283 1.286L9.945 16.83c-.709.71-1.858.71-2.567 0l-1.284-1.287L21.071.536zm-6.418 4.717l-2.567 2.572-3.424-3.43-4.28 4.288 3.424 3.43-1.71 3.43L.531 9.97a1.821 1.821 0 010-2.572L7.378.537A1.813 1.813 0 019.945.535l4.707 4.717z"></path>
+                    </g>
+                </svg>
+                <svg viewBox="0 0 72 18" xmlns="http://www.w3.org/2000/svg"
+                     class="hidden laptop:block ml-1 h-logo fade-enter-done">
+                    <g fill="none" fill-rule="evenodd">
+                        <path d="M2.636 5.892v5.827h3.201l.678 1.943H2.636A1.94 1.94 0 01.7 11.719V5.892A1.94 1.94 0 012.636 3.95h3.201v1.942h.678V2.007a.97.97 0 01.97-.971h.969v11.655a.97.97 0 01-.97.97h-.969V5.893H2.636zm9.692 7.77a1.94 1.94 0 01-1.936-1.943V9.777a1.94 1.94 0 011.936-1.942h3.201v1.942h.678V5.892h-5.33v-.971a.97.97 0 01.967-.971h4.363c1.071 0 1.939.87 1.939 1.942v6.799a.97.97 0 01-.97.97h-.969V9.778h-3.879v1.942h3.201l.678 1.943h-3.879zm7.756 0V4.92a.97.97 0 01.968-.971h.968v8.74a.97.97 0 01-.968.972h-.968zM22.02 2.014c0 .27-.093.499-.278.685a.927.927 0 01-.683.28c-.27 0-.5-.094-.69-.28a.923.923 0 01-.285-.685c0-.28.095-.513.285-.699.19-.186.42-.279.69-.279.27 0 .497.093.683.28a.95.95 0 01.278.698zm1.941 11.648V2.007a.97.97 0 01.968-.971h.968v11.655a.97.97 0 01-.968.97h-.968zm6.532.004l-2.613-8.22a.976.976 0 01.65-1.212l.92-.284 2.132 6.98 1.92-6.293a.96.96 0 011.201-.645l.888.284L32.3 15.201c-.248.816-1 1.374-1.85 1.374h-1.601a.97.97 0 01-.968-.97v-.972h1.609c.533 0 1.002-.432 1.004-.967z"
+                              fill="var(--theme-label-primary)"></path>
+                        <path d="M38.75 13.788v-1.372h-1.408v1.372h1.407zm4.21.09c.683 0 1.261-.17 1.735-.513.473-.342.804-.8.992-1.372v1.795h1.165V4.297h-1.165v4.245a2.674 2.674 0 00-.992-1.372c-.474-.342-1.052-.513-1.734-.513-.623 0-1.178.145-1.664.436-.487.29-.869.71-1.146 1.257-.277.547-.416 1.189-.416 1.924 0 .735.139 1.374.416 1.917.277.543.66.96 1.146 1.251.486.29 1.04.436 1.664.436zm.333-1.026c-.716 0-1.29-.229-1.721-.686-.431-.458-.647-1.088-.647-1.892 0-.804.216-1.434.647-1.892.43-.457 1.005-.686 1.721-.686.461 0 .873.105 1.235.314.363.21.647.511.852.904.204.394.307.847.307 1.36 0 .513-.103.964-.307 1.353a2.23 2.23 0 01-.852.904c-.362.214-.774.321-1.235.321zm8.525 1.026c.589 0 1.118-.107 1.587-.32.47-.214.851-.514 1.146-.898a2.96 2.96 0 00.57-1.309h-1.242a1.777 1.777 0 01-.698 1.148c-.38.287-.851.43-1.414.43-.623 0-1.15-.201-1.581-.603-.431-.402-.66-1.005-.685-1.808h5.62c.033-.18.05-.394.05-.642a3.29 3.29 0 00-.403-1.616 3 3 0 00-1.165-1.167c-.507-.29-1.103-.436-1.785-.436-.674 0-1.272.145-1.792.436-.52.29-.928.71-1.222 1.257-.295.547-.442 1.189-.442 1.924 0 .735.147 1.374.442 1.917.294.543.701.96 1.222 1.251.52.29 1.118.436 1.792.436zm2.176-3.925H49.5c.034-.77.269-1.353.704-1.75.435-.398.973-.597 1.613-.597.4 0 .772.086 1.113.257.342.17.61.431.807.782.196.35.281.787.256 1.308zm6.105 3.835l2.752-7.041h-1.254l-2.176 5.797-2.202-5.797h-1.254l2.752 7.041h1.382z"
+                              fill-opacity="0.64" fill="var(--theme-label-primary)" fill-rule="nonzero"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div><img id="middle-logo"
+                      src="https://cdn.discordapp.com/attachments/790365558403104768/961725056977887263/removal.ai_tmp-624f4a2eca71f.png"
+                      alt=""></div>
+
+        </div>
+        <div id="navbar-side">
+            <div id="navbar-side--lists">
+                <ul class="navbar-side--toplist">
+                    <b>Discover</b>
+                    <li><span><svg width="32px" height="32px" viewBox="0 0 24 24"
+                                   xmlns="http://www.w3.org/2000/svg"
+                                   class="w-5 h-5 pointer-events-none"><path
+                            d="M12.984 4.803l.6.746.876 1.058.834.999.523.641c1.27 1.585 2.243 2.633 2.557 4.315a5.655 5.655 0 01-.465 3.451c-.922 1.95-3 3.339-5.154 3.445-.09.004-.18.006-.268.006-2.083 0-4.118-1.176-5.123-2.967-1.338-2.348-1.037-5.129.748-6.943.638-.648.975-.64 1.013.023l.003.132.001.566.009.574.013.381.022.376c.102 1.426.44 2.665 1.557 2.852.682.114 1.407-.064 1.853-.818.295-.509.353-1.11.163-1.69l-.073-.193-.09-.195-.115-.236-.218-.431-.275-.522-.33-.614c-.775-1.43-.908-3.343.206-4.925a.707.707 0 011.133-.03z"
+                            fill="gray" fill-rule="evenodd"></path></svg></span><span
+                    >Popular</span>
+                    </li>
+                    <li><span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                   width="32px" height="2em" class="w-5 h-5 pointer-events-none"><path
+                            d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                            fill="gray" fill-rule="evenodd"></path></svg></span><span
+                    >Most upvoted</span></li>
+                    <li><span class="relative px-3"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                         width="32px" height="32px"><path
+                            d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                            fill="gray" fill-rule="evenodd"></path></svg></span><span
+                    >Best discussions</span>
+                    </li>
+                    <li><span><svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                   class="w-5 h-5 pointer-events-none"><path
+                            d="M17.94 15.82l2.122 2.12a1.5 1.5 0 11-2.121 2.122l-2.122-2.121a1.5 1.5 0 012.122-2.122zm-7.44-.32a5 5 0 100-10 5 5 0 000 10zm0 2a7 7 0 110-14 7 7 0 010 14z"
+                            fill="gray" fill-rule="evenodd"></path></svg></span><span>Search</span></li>
+                    <b>Manage</b>
+                    <li><span class="relative px-3"><svg width="32px" height="32px" viewBox="0 0 24 24"
+                                                         xmlns="http://www.w3.org/2000/svg"
+                                                         class="w-5 h-5 pointer-events-none"><path
+                            d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                            fill="gray" fill-rule="evenodd"></path></svg></span><span>Bookmarks</span></li>
+                    <li><span class="relative px-3"><svg height="2em" viewBox="0 0 24 24" width="2em"
+                                                         xmlns="http://www.w3.org/2000/svg"
+                                                         class="w-5 h-5 pointer-events-none"><path
+                            d="M12 5c3.98 0 6.98 2.333 9 7-2.02 4.667-5.02 7-9 7-3.98 0-6.98-2.333-9-7 2.02-4.667 5.02-7 9-7zm0 3a4 4 0 100 8 4 4 0 000-8z"
+                            fill="gray" fill-rule="evenodd"></path></svg></span><span
+                    >Reading history</span>
+                    </li>
+                    <li><span class="relative px-3"><svg width="32px" height="32px" viewBox="0 0 24 24"
+                                                         xmlns="http://www.w3.org/2000/svg"
+                                                         class="w-5 h-5 pointer-events-none"><path
+                            d="M12 4a1.6 1.6 0 011.6 1.6v1.311c.301.095.59.215.866.359l.928-.927a1.6 1.6 0 112.263 2.263l-.927.928a5.3 5.3 0 01.36.867l1.31-.001a1.6 1.6 0 110 3.2h-1.311a5.3 5.3 0 01-.359.866l.927.928a1.6 1.6 0 11-2.263 2.263l-.928-.927a5.3 5.3 0 01-.866.359V18.4a1.6 1.6 0 11-3.2 0v-1.31a5.3 5.3 0 01-.866-.36l-.928.927a1.6 1.6 0 11-2.263-2.263l.927-.928a5.3 5.3 0 01-.359-.866H5.6a1.6 1.6 0 110-3.2h1.31a5.3 5.3 0 01.36-.866l-.927-.928a1.6 1.6 0 112.263-2.263l.928.927a5.3 5.3 0 01.867-.36L10.4 5.6A1.6 1.6 0 0112 4zm0 4.8a3.2 3.2 0 100 6.4 3.2 3.2 0 000-6.4z"
+                            fill="gray" fill-rule="evenodd"></path></svg></span><span
+                    >Customize</span></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <div id="middle-container">
+        <div id="content-wrapper">
+            <div id="tag-section">
+                <div>Get the content you need by creating a personal feed</div>
+                <div id="tag-button"> Choose Tags</div>
+            </div>
+            <h4>Popular </h4>
+            <div id="content-grid">
+                <div class="cards">
+                    <div class="card-users">
+                        <div class="card-users--circle"></div>
+                    </div>
+                    <div class="card-title"><h2>Aura Theme is out!</h2></div>
+                    <div class="card-details"><h6>oct 12, 2021 - 1m read time</h6></div>
+                    <div class="card-img"><img src="https://tinyurl.com/2p8nr7ut" alt=""></div>
+                    <div class="card-actions">
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg"
+                                 class="icon">
+                                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-users">
+                        <div class="card-users--circle"></div>
+                    </div>
+                    <div class="card-title"><h2>Aura Theme is out!</h2></div>
+                    <div class="card-details"><h6>oct 12, 2021 - 1m read time</h6></div>
+                    <div class="card-img"><img src="https://tinyurl.com/2p8nr7ut" alt=""></div>
+                    <div class="card-actions">
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg"
+                                 class="icon">
+                                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-users">
+                        <div class="card-users--circle"></div>
+                    </div>
+                    <div class="card-title"><h2>Aura Theme is out!</h2></div>
+                    <div class="card-details"><h6>oct 12, 2021 - 1m read time</h6></div>
+                    <div class="card-img"><img src="https://tinyurl.com/2p8nr7ut" alt=""></div>
+                    <div class="card-actions">
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg"
+                                 class="icon">
+                                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-users">
+                        <div class="card-users--circle"></div>
+                    </div>
+                    <div class="card-title"><h2>Aura Theme is out!</h2></div>
+                    <div class="card-details"><h6>oct 12, 2021 - 1m read time</h6></div>
+                    <div class="card-img"><img src="https://tinyurl.com/2p8nr7ut" alt=""></div>
+                    <div class="card-actions">
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg"
+                                 class="icon">
+                                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-users">
+                        <div class="card-users--circle"></div>
+                    </div>
+                    <div class="card-title"><h2>Aura Theme is out!</h2></div>
+                    <div class="card-details"><h6>oct 12, 2021 - 1m read time</h6></div>
+                    <div class="card-img"><img src="https://tinyurl.com/2p8nr7ut" alt=""></div>
+                    <div class="card-actions">
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg"
+                                 class="icon">
+                                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-users">
+                        <div class="card-users--circle"></div>
+                    </div>
+                    <div class="card-title"><h2>Aura Theme is out!</h2></div>
+                    <div class="card-details"><h6>oct 12, 2021 - 1m read time</h6></div>
+                    <div class="card-img"><img src="https://tinyurl.com/2p8nr7ut" alt=""></div>
+                    <div class="card-actions">
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg"
+                                 class="icon">
+                                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-users">
+                        <div class="card-users--circle"></div>
+                    </div>
+                    <div class="card-title"><h2>Aura Theme is out!</h2></div>
+                    <div class="card-details"><h6>oct 12, 2021 - 1m read time</h6></div>
+                    <div class="card-img"><img src="https://tinyurl.com/2p8nr7ut" alt=""></div>
+                    <div class="card-actions">
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg"
+                                 class="icon">
+                                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-users">
+                        <div class="card-users--circle"></div>
+                    </div>
+                    <div class="card-title"><h2>Aura Theme is out!</h2></div>
+                    <div class="card-details"><h6>oct 12, 2021 - 1m read time</h6></div>
+                    <div class="card-img"><img src="https://tinyurl.com/2p8nr7ut" alt=""></div>
+                    <div class="card-actions">
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M13.162 3.813a2 2 0 01.465.465l6.674 9.343a1 1 0 01-1.102 1.539l-4.032-1.21a1 1 0 00-1.277.816l-.767 5.375a1 1 0 01-.99.859h-.266a1 1 0 01-.99-.859l-.767-5.375a1 1 0 00-1.278-.816l-4.031 1.21a1 1 0 01-1.102-1.54l6.674-9.342a2 2 0 012.79-.465z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                 class="icon">
+                                <path d="M16.5 3.75l.335.036c1.098.123 1.779.356 2.365.727a3.62 3.62 0 011.34 1.496c.303.624.46 1.326.46 2.43v4.769a3.59 3.59 0 01-3 3.541l-2.565.428a2.29 2.29 0 00-.324.067.847.847 0 00-.189.084l-.076.05c-.043.03-.098.073-.19.147l-3.094 2.765A.961.961 0 0110 19.54v-.866c0-.41-.037-.85-.11-1.003a.903.903 0 00-.323-.372c-.142-.094-.284-.152-.69-.21l-2.377-.34a4.153 4.153 0 01-1.821-.715 3.93 3.93 0 01-1.228-1.416A4.153 4.153 0 013 12.714V8.44c0-1.105.157-1.807.46-2.43A3.619 3.619 0 014.8 4.512c.586-.37 1.267-.604 2.365-.727L7.5 3.75a40.75 40.75 0 019 0zm-.5 7.5H8a1 1 0 00-.117 1.993l.117.006h8a1 1 0 00.117-1.993L16 11.249zm0-4H8a1 1 0 00-.117 1.993L8 9.249h8a1 1 0 00.117-1.993L16 7.249z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                            <b>10</b>
+                        </div>
+                        <div class="card-actions--icons">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg"
+                                 class="icon">
+                                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                                      fill="gray" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="navbar-bottom">
+    <div id="navbar-bottom-wrapper">
+        <div class="navbar-bottom--item"><a style="width: 100%;" aria-label="Home" href="#" aria-pressed="true"
+        >
+            <svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                <path d="M13.378 3.57l7.077 6.168A1.853 1.853 0 0121 11v8a2 2 0 11-4 0v-3a2 2 0 00-1.85-1.995L15 14H9a2 2 0 00-1.995 1.85L7 16v3a2 2 0 11-4 0v-8a1.853 1.853 0 01.545-1.262l7.077-6.167a1.949 1.949 0 012.756 0z"
+                      fill="gray" fill-rule="evenodd"></path>
+            </svg>
+        </a>
+        </div>
+        <div class="navbar-bottom--item">
+            <svg width="2em" height="2em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                <path d="M7.828 4h8.343a2 2 0 011.996 1.878l.83 13.591a.5.5 0 01-.795.433l-5.608-4.144a1 1 0 00-1.189 0l-5.608 4.144a.5.5 0 01-.796-.433l.83-13.591A2 2 0 017.829 4z"
+                      fill="gray" fill-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="navbar-bottom--item"><a style="width: 100%;" aria-label="Search" href="#" aria-pressed="false"
+                                            class="iconOnly large btn flex-row items-center justify-center border typo-callout font-bold no-underline shadow-none cursor-pointer select-none focus-outline flex relative btn-tertiary">
+            <svg width="2em" height="2em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                <path d="M17.94 15.82l2.122 2.12a1.5 1.5 0 11-2.121 2.122l-2.122-2.121a1.5 1.5 0 012.122-2.122zm-7.44-.32a5 5 0 100-10 5 5 0 000 10zm0 2a7 7 0 110-14 7 7 0 010 14z"
+                      fill="gray" fill-rule="evenodd"></path>
+            </svg>
+        </a></div>
+        <div class="navbar-bottom--item"><a style="width: 100%;" aria-label="Filters" href="#"
+                                            aria-pressed="false"
+                                            class="iconOnly large btn flex-row items-center justify-center border typo-callout font-bold no-underline shadow-none cursor-pointer select-none focus-outline flex relative btn-tertiary">
+            <svg width="2em" height="2em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                <g fill="gray" fill-rule="evenodd">
+                    <path d="M5.25 16.5a.75.75 0 110-1.5H12a3 3 0 013-3h1.5a3 3 0 013 3v1.5a3 3 0 01-3 3H15a3 3 0 01-3-3H5.25zm11.25-3H15a1.5 1.5 0 00-1.493 1.356L13.5 15v1.5a1.5 1.5 0 001.356 1.493L15 18h1.5a1.5 1.5 0 001.493-1.356L18 16.5V15a1.5 1.5 0 00-1.356-1.493L16.5 13.5zM18.75 7.5a.75.75 0 010 1.5H12a3 3 0 01-3 3H7.5a3 3 0 01-3-3V7.5a3 3 0 013-3H9a3 3 0 013 3h6.75zm-11.25 3H9a1.5 1.5 0 001.493-1.356L10.5 9v-.735-.015l.001-.014L10.5 7.5a1.5 1.5 0 00-1.356-1.493L9 6H7.5a1.5 1.5 0 00-1.493 1.356L6 7.5V9a1.5 1.5 0 001.356 1.493l.144.007z"></path>
+                </g>
+            </svg>
+        </a></div>
+    </div>
+</div>
+</body>
+</html>
+
